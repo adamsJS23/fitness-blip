@@ -1,22 +1,82 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
-html{
-  font-size:62.5% ;
+html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
-body{
-background-color: #dae0ea;
+body {
+  background-color: #dae0ea;
+  height: 100vh;
+  padding-block: 10rem;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin-inline: auto;
+  
+}
+
+.blip {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 50rem 10rem 10rem;
+  grid-template-rows: repeat(10rem, 1fr);
+}
+
+.blip__content {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+.blip__heading {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.blip__text {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.blip__link {
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  background-color: #1a63dd;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.blip__img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.blip__img--1{
+  grid-column: 2;
+  grid-row: 1/span 2;
+}
+
+.blip__img--2{
+grid-column: 3;
+grid-row: 1;
+}
+
+.blip__img--2{
+  grid-column: 3;
+  grid-row: 2;
+
 }
