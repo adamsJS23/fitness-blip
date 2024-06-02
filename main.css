@@ -33,7 +33,7 @@ a {
 .blip {
   padding: 5rem;
   display: grid;
-  grid-template-columns: minmax(50rem, 1fr) repeat(2,minmax(10rem, 1fr));
+  grid-template-columns: minmax(50rem, 1fr) repeat(2,minmax(12rem,15rem));
   grid-gap: 3rem;
 }
 
