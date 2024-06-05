@@ -10,10 +10,9 @@ html {
 }
 
 body {
-  font-family: 'Numito',sans-serif;
+  font-family: "Numito", sans-serif;
   background-color: #dae0ea;
-  height: 100vh;
-  /* padding-block: 10rem; */
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,11 +29,10 @@ a {
 .blip {
   padding: 2rem;
   max-width: 900px;
-  display: flex;
-  justify-content: space-between;
-  grid-gap: 3rem;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* gap: 3rem; */
   position: relative;
-
 }
 
 .blip::before {
@@ -50,10 +48,8 @@ a {
 }
 
 .blip__content {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
   padding: 4rem 0 0 4rem;
+  margin-bottom: 4rem;
 }
 
 .blip__heading {
@@ -76,27 +72,27 @@ a {
   border-radius: 5px;
   display: inline-flex;
   gap: 1rem;
-  align-self:flex-start ;
+  align-self: flex-start;
   margin-top: auto;
 }
 
-.blip__gallery{
-  flex: 1;
+.blip__gallery {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    ". ."
+    "bigimg bigimg";
   grid-gap: 2rem;
 }
 
 .blip__img {
+  height: 15rem;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 5px;
 }
 
-.blip__img--1 {
-  grid-column: 1;
-  grid-row: 1 /span 2;
+.blip__img:nth-child(3){
+  grid-area: bigimg;
 }
-
