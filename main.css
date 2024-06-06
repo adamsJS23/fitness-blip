@@ -67,7 +67,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  align-self: flex-start;
   margin-top: auto;
   
 }
@@ -98,6 +97,7 @@ a {
 
   .blip__link {
     display: inline-flex;
+  align-self: flex-start;
   }
 
   .blip__gallery {
@@ -152,3 +152,84 @@ a {
     flex: 1;
   }
 }
+
+
+/* html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,150px);
+  grid-template-areas: 
+    "green green blue"
+    ". . camp2"
+    "red red camp2";
+  gap: 1em;
+}
+
+section > * {
+  border-radius: .7em;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 100%;
+}
+
+.green {
+  background-color: #C7EFC0;
+  grid-area: green;
+}
+.blue {
+  background-color: #C0E7EF;
+}
+.yellow {
+  background-color: #EFEAC0;
+}
+.camp2 {
+  grid-area: camp2;
+}
+.red {
+  grid-area: red;
+  background-color: #EFC9C0;
+  padding: 3.4em;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+p {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+
+  h1 {
+    margin-top: 0;
+  }
+  
+
+section{
+  grid-template-areas: 
+    "green green green"
+    "blue . camp2"
+    "red . camp2";
+}
+
+.green{
+  grid-area: green;
+}
+  
+  .red{
+    grid-area:red;
+  }
+
+} */
